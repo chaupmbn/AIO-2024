@@ -8,20 +8,23 @@ Output: [5, 5, 5, 5, 10, 12, 33, 33]
 """
 # Define a function to find maximum number in a list
 def max_finding(nums):
-    max = nums[0]
+    max_num = nums[0]
     for num in nums:
-        if num > max:
-            max = num
-    return max
+        if num > max_num:
+            max_num = num
+    return max_num
 
 # Define the main function
+
+
 def sliding(num_list, k):
     n = len(num_list)
     result = []
     for i in range(n - k + 1):
-        window = num_list[i : (i+k)]
+        window = num_list[i: (i+k)]
         result.append(max_finding(window))
     return result
+
 
 num_list = [3, 4, 5, 1, -44, 5, 10, 12, 33, 1]
 k = 3
