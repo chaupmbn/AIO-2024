@@ -7,8 +7,6 @@ Input: num_list = [3, 4, 5, 1, -44, 5, 10, 12, 33, 1] với k=3
 Output: [5, 5, 5, 5, 10, 12, 33, 33]
 """
 # Define a function to find maximum number in a list
-
-
 def max_finding(nums):
     max_num = nums[0]
     for num in nums:
