@@ -5,21 +5,15 @@ def f1_score(tp, fp, fn):
     print(f"Inputs: TP = {tp}, FP = {fp}, FN = {fn}")
 
     # Check whether any input is not integer and print it out
-    if type(tp) == int:
-        pass
-    else:
+    if type(tp).isinstance() is False:
         print("TP must be integer.")
         return None
 
-    if type(fp) == int:
-        pass
-    else:
+    if type(fp).isinstance() is False:
         print("FP must be integer.")
         return None
 
-    if type(fn) == int:
-        pass
-    else:
+    if type(fn).isinstance() is False:
         print("FN must be integer.")
         return None
 
@@ -36,8 +30,9 @@ def f1_score(tp, fp, fn):
         print("TP and FP and FN must be greater than zero.")
         return None
 
+
 # Run test cases
-f1_score(tp=2, fp=4, fn=5)
+f1_score(tp=2, fp=3, fn=4)
 f1_score(tp='a', fp=3, fn=4)
 f1_score(tp=2, fp='a', fn=4)
 f1_score(tp=2, fp=3, fn='a')
