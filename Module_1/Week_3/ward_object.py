@@ -110,3 +110,4 @@ if __name__ == "__main__":
     ward1.describe()
     print("--------------------------------------------------------------")
     print(f"\nAverage year of birth (teachers): {ward1.compute_average()}")
+    print("--------------------------------------------------------------")
